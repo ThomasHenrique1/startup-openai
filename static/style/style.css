@@ -1,0 +1,80 @@
+
+* { /* Resetando margens e padding para todos os elementos */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif; 
+    background-color: #f5f5f5; 
+    display: flex; /* Usando flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Ocupa toda a altura da tela */
+}
+
+
+.container {
+    width: 90%; /* Largura de 90% da tela */
+    max-width: 800px; /* Largura máxima de 800px */
+    max-height: 90vh; /* Altura máxima de 90% da tela */
+    background-color: white; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px; /* Espaçamento interno */
+    overflow-y: auto; /* Permite rolagem vertical se o conteúdo exceder a altura */
+}
+
+
+h1 {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+
+#startup-form {
+    display: flex; /* Usando flexbox para o layout do formulário */
+    flex-direction: column; /* Alinhamento vertical dos elementos */
+}
+
+
+#startup-input {
+    padding: 10px; 
+    border: 2px solid #007BFF; 
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+    font-size: 16px; 
+}
+
+
+button {
+    padding: 10px; 
+    border: none; 
+    border-radius: 5px; 
+    background-color: #007BFF; 
+    color: white; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; /* Transição suave para mudança de cor */
+}
+
+/* Estilizando o botão ao passar o mouse */
+button:hover {
+    background-color: #0056b3; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilizando a resposta da API */
+.response {
+    margin-top: 20px; /* Espaço acima da resposta */
+    padding: 10px; 
+    border: 1px solid #007BFF; 
+    border-radius: 5px; 
+    background-color: #f0f8ff; 
+    font-family: "Fredoka", sans-serif; /* Fonte Fredoka */
+    font-size: 18px; /* Tamanho da fonte */
+    line-height: 1.5; 
+    max-height: 70vh; /* Altura máxima da resposta */
+    overflow-y: auto; /* Permite rolagem vertical se o conteúdo exceder a altura */
+}
